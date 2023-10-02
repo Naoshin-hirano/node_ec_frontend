@@ -1,6 +1,11 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import React, { useEffect } from "react";
+import type { AppProps } from "next/app";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }: AppProps) {
+    useEffect(() => {
+        const jssStyles = document.querySelector("#jss-server-side");
+        jssStyles?.parentElement?.removeChild(jssStyles);
+    }, []);
+
+    return <Component {...pageProps} />;
 }
