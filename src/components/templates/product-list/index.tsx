@@ -1,3 +1,4 @@
+import { Footer } from "@/components/molecules/Footer";
 import { Header } from "@/components/molecules/Header";
 import Layout from "@/components/molecules/Layout";
 import { ProductList } from "@/components/organisms/product-list/ProdectList";
@@ -10,6 +11,7 @@ export const ProductListTemp = () => {
             <Container maxWidth="md">
                 <ProductList />
             </Container>
+            <Footer />
         </Layout>
     );
 };
