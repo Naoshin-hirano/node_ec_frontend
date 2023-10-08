@@ -105,7 +105,11 @@ export const Header = () => {
                         </Grid>
                     </Grid>
                     <Grid item>
-                        <Badge badgeContent={4} color="error">
+                        <Badge
+                            badgeContent={4}
+                            color="error"
+                            overlap="rectangular"
+                        >
                             <ShoppingCartIcon />
                         </Badge>
                     </Grid>
